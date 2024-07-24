@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Figtree } from "next/font/google";
+import { Button } from "@/components/ui/button";
+import { CircleUserRound } from "lucide-react";
 
 const figtree = Figtree({ subsets: ["latin"] });
 
@@ -11,15 +13,14 @@ export function Navbar() {
           <Link href="/">edGain</Link>
         </div>
         <div className="flex  ml-10 gap-5">
-          <Link href="/">Examples</Link>
+          <Link href="/ma/docs">Docs</Link>
           <Link href="/ma/one">One</Link>
-          <Link href="/">Components</Link>
+          <Link href="/ma/settings">Settings</Link>
         </div>
       </div>
-      <div className="flex gap-8">
-        <button className=" border-[#121117] border px-6 rounded-lg hover:opacity-25">
-          <span>Log in</span>
-        </button>
+      <div className="flex items-center gap-8">
+        <Button variant="outline">Log in</Button>
+        <CircleUserRound className="w-4 h-4" />
       </div>
     </div>
   );
