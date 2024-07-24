@@ -12,6 +12,7 @@ export function Navbar() {
         </div>
         <div className="flex  ml-10 gap-5">
           <Link href="/">Examples</Link>
+          <Link href="/ma/one">One</Link>
           <Link href="/">Components</Link>
         </div>
       </div>
