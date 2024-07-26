@@ -15,22 +15,25 @@ export default function About() {
         <h1 className="text-[50px] text-white font-semibold">
             Make anything possible with
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+               {" "}
                 Web Development
             </span>
         </h1>
-        <p className="text-grey-200 hidden md:block">
+        <p className="text-gray-200 hidden md:block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil ipsum porro, repudiandae necessitatibus magni quis voluptate sapiente impedit aliquam odio dolor corrupti? Voluptatibus asperiores id qui a vitae similique.
         </p>
         <div className="flex-col z-[20] md:flex-row hidden md:flex gap-5">
             <Link href="/my-skills" 
-            className='rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
+            className='rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
               Learn more
             </Link>
-            <Link href="/my-projects" className='rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
+            <Link href="/my-projects"
+             className='rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
             <div className='absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20 '/>
               My Projects
             </Link>
-            <Link href="/contact-me" className='rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
+            <Link href="/contact-me" 
+            className='rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
             <div className='absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20 '/>
               Contact Me
             </Link>
@@ -39,7 +42,7 @@ export default function About() {
 </div>
 
 
-        <div className="absolute bottom-10 z-[20] right-5 flex-col md:hidden gap-5 ">
+        <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5 ">
             <Link href="/my-skills" className='rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
               Learn more
             </Link>
